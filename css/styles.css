@@ -45,8 +45,8 @@ img {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 section {
   padding-bottom: 120px;
@@ -314,15 +314,18 @@ section {
   row-gap: 48px;
 }
 .portfolio-photo-cards {
-  flex-basis: calc((100%-48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-text-cards {
   border: 1px solid #e7e9fc;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* padding-left: 16px; */
+  padding-left: 16px;
   border-top: none;
 }
 .portfolio-title {
   margin-bottom: 8px;
+}
+.potfolio-container {
+  padding-top: 96px;
 }
