@@ -45,8 +45,8 @@ img {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 section {
   padding-bottom: 120px;
@@ -156,15 +156,20 @@ section {
 .hero {
   background-color: var(--primary-text);
   text-align: center;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .hero-text {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-
+  /* text-align: center; */
   letter-spacing: 0.02em;
   color: var(--white);
+  width: 496px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   background: var(--iris-brand-color);
@@ -188,30 +193,31 @@ section {
 }
 
 /* =========feature-container=========== */
+
 .feature-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .feature-list:not(:last-child) {
   margin-right: 24px;
 }
 .feature-list {
 }
-.feature-text p {
+.feature-text {
   margin-bottom: 8px;
 }
 .feature-subtitle {
   min-width: 264px;
 }
 /* ===============works==================== */
+.work-contanier {
+  padding-top: 0;
+}
 .work-header {
   text-transform: capitalize;
 }
 
 .work-list {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 24px;
 }
 .work-cards {
@@ -224,17 +230,15 @@ section {
 }
 .team-list {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 24px;
 }
 .team-cards {
-  flex-basis: calc(100%-24px * 3) / 4;
+  flex-basis: calc((100%-24px * 3) / 4);
+  background-color: var(--white);
 }
 .team-cards-text {
   padding-bottom: 32px;
   padding-top: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
   text-align: center;
 }
 .team-title {
@@ -243,6 +247,8 @@ section {
 /* ===========footer============= */
 .footer-container {
   background-color: var(--primary-text);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-btn {
   font-family: 'Raleway';
@@ -263,15 +269,11 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cornflower-accent-color);
-  min-width: 264px;
-  min-height: 72px;
+
   margin-top: 16px;
 }
 .footer-container-logo {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-right: 1020px;
-  padding-left: 156px;
+  width: 264px;
 }
 
 /* ===========portfolio============= */
@@ -288,7 +290,10 @@ section {
   color: var(--iris-brand-color);
   border: 1px solid var(--cornflower-accent-color);
   border-radius: 4px;
-  border-top: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -298,7 +303,6 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   column-gap: 24px;
   margin-bottom: 72px;
 }
@@ -310,13 +314,14 @@ section {
   row-gap: 48px;
 }
 .portfolio-photo-cards {
-  flex-basis: calc(100%-24px * 8) / 9;
+  flex-basis: calc((100%-48px) / 3);
 }
 .portfolio-text-cards {
   border: 1px solid #e7e9fc;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
+  /* padding-left: 16px; */
+  border-top: none;
 }
 .portfolio-title {
   margin-bottom: 8px;
