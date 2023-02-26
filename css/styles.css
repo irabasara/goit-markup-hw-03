@@ -70,6 +70,8 @@ section {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  text-align: center;
 }
 .secondary-text {
   font-weight: 500;
@@ -147,6 +149,7 @@ section {
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower-accent-color);
 }
 /* ===========main============== */
 /* ========hero============= */
@@ -158,7 +161,7 @@ section {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 48px;
@@ -205,12 +208,37 @@ section {
 .work-header {
   text-transform: capitalize;
 }
-.work-container {
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+.work-cards {
+  flex-basis: calc(100%-58px) / 3;
 }
 
 /* ====================team================ */
 .team-container {
   background-color: var(--cloud-light-background);
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+.team-cards {
+  flex-basis: calc(100%-24px * 3) / 4;
+}
+.team-cards-text {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
+  text-align: center;
+}
+.team-title {
+  margin-bottom: 8px;
 }
 /* ===========footer============= */
 .footer-container {
@@ -235,6 +263,15 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cornflower-accent-color);
+  min-width: 264px;
+  min-height: 72px;
+  margin-top: 16px;
+}
+.footer-container-logo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 1020px;
+  padding-left: 156px;
 }
 
 /* ===========portfolio============= */
@@ -249,9 +286,38 @@ section {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--iris-brand-color);
+  border: 1px solid var(--cornflower-accent-color);
+  border-radius: 4px;
+  border-top: none;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--hover-ocean);
   color: var(--white);
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 72px;
+}
+
+.portfolio-photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-photo-cards {
+  flex-basis: calc(100%-24px * 8) / 9;
+}
+.portfolio-text-cards {
+  border: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+.portfolio-title {
+  margin-bottom: 8px;
 }
